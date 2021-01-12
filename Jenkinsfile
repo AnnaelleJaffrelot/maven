@@ -30,9 +30,11 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                //withMaven(mavenSettingsConfig: 'maven-config', globalMavenSettingsConfig: 'global-config') {
-                    bat "mvn  -s C:/Utilisateurs/annae/.m2/settings.xml deploy"
-                //}
+                configFileProvider(
+                    [configFile(fileId: 'f8069f73-6367-4fc5-a6d6-813eb424b54d', variable: 'MAVEN_GLOBAL_SETTINGS')]
+                    ) {
+                    bat 'echo mvn -gs %MAVEN_GLOBAL_SETTINGS deploy'
+                    }
             }
             }
       /*   stage('Release') {

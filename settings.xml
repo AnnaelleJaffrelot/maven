@@ -13,13 +13,23 @@
       <passphrase>optional; leave empty if not used.</passphrase>
     </server>
     -->
+
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <!-- localRepository
+   | The path to the local repository maven will use to store artifacts.
+   |
+   | Default: C:/Users/annae/.m2/repository-->
+
+  <localRepository>C:/Utilisateurs/annae/.m2/repository</localRepository>
    <server>
-      <id>helloworld-snapshot</id>
+      <id>snapshot</id>
       <username>admin</username>
       <password>admin123</password>
    </server>
    <server>
-      <id>helloworld-release</id>
+      <id>release</id>
       <username>admin</username>
       <password>admin123</password>
    </server>
