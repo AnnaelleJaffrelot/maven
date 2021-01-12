@@ -1,0 +1,26 @@
+<servers>
+<server>
+      <id>deploymentRepo</id>
+      <username>repouser</username>
+      <password>repopwd</password>
+    </server>
+    -->
+ 
+    <!-- Another sample, using keys to authenticate.
+    <server>
+      <id>siteServer</id>
+      <privateKey>/path/to/private/key</privateKey>
+      <passphrase>optional; leave empty if not used.</passphrase>
+    </server>
+    -->
+   <server>
+      <id>helloworld-snapshot</id>
+      <username>admin</username>
+      <password>admin123</password>
+   </server>
+   <server>
+      <id>helloworld-release</id>
+      <username>admin</username>
+      <password>admin123</password>
+   </server>
+  </servers>
