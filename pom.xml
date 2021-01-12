@@ -27,6 +27,17 @@
     </dependency>
   </dependencies>
 
+  <distributionManagement>
+  <snapshotRepository>
+    <id>snapshot</id>
+    <url>http://localhost:8081/nexus/content/repositories/snapshot/</url>
+  </snapshotRepository>
+  <repository>
+    <id>release</id>
+    <url>http://localhost:8081/nexus/content/repositories/release/</url>
+  </repository>
+</distributionManagement>
+
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
